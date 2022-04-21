@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+//import './App.css';
+import React from "react";
+
+//import Favorites from "./components/Favorites/Favorites.jsx";//
+import Home from "./galga/components/Home/Home.jsx";//
+import NavBar from "./galga/components/NavBar/NavBar.jsx";//
+import { Route } from "react-router-dom";
+import FactAPOD from "./galga/components/FactAPOD/FactAPOD.jsx";
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+    return (
+        <div>
+           <NavBar />
+            <Route exact path="/" component={Home} />
+            
+            {/*<Route path="/favs" component={Favorites} />*/}
+            <Route path="/apod" component={FactAPOD} />
+            
+        </div>
+    );
+  }
+  
+  export default App;
+  
