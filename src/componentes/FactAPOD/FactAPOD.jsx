@@ -6,8 +6,8 @@ import { connect } from 'react-redux';
 let FactAPOD = (props) =>{
 
  return(<div>
-<img src={props.url} alt=""/>
-<h2>{props.copyright}</h2>
+<img src={props.imagen.url} alt=""/>
+<h2>{props.imagen.title}</h2>
 
 
 

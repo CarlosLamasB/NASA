@@ -3,7 +3,7 @@ import axios from "axios";
 let API_KEY='IwQMnvW3SAfLZZbBpqpziqdhfbkV5Sokf7bXpitz';
 
 
-export function addFavFACT(payload){ // EL PAYLOAD VA A SER el FACT QUE QUEREMOS GUARDAR EN FAV
+export function addFavFACT(payload){ 
     return {
       type: ADD_FAV_FACT, 
       payload
