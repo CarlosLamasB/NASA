@@ -13,7 +13,16 @@ export default class Nav extends Component {
       </li>
       <li>
         <Link to='/apod'>APOD</Link>
- </li>
+     </li>
+     <li>
+        <Link to='/CreateMartianPhotos'>Create Martian Photos</Link>
+     </li>
+
+
+     <li>
+        <Link to='/favorites'>Favoritos</Link>
+      </li>
+     
  </ul>
             </div>
         )

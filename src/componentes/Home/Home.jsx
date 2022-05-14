@@ -7,9 +7,7 @@ import { searchAPOD } from '../../redux/actions';
 
 export class Home extends Component {
 
-  //constructor(props){
-    //super(props)
-  //}
+  
 componentDidMount(){
 
     
@@ -19,7 +17,7 @@ this.props.searchAPOD()
   
   render() {
     return (
-      <div>  Hola
+      <div>  <h2>HOLIS</h2>
     {console.log(this.props.searchAPOD)}
   
        {/* { this.props.imagen?.map(producto=>(
