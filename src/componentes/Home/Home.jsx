@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { searchAPOD } from '../../redux/actions';
+import img from '../../img/NASA.png'
 //import FactAPOD from '../FactAPOD/FactAPOD.jsx';
 
 
@@ -18,21 +19,8 @@ this.props.searchAPOD()
   render() {
     return (
       <div>  <h2>HOLIS</h2>
-    {console.log(this.props.searchAPOD)}
-  
-       {/* { this.props.imagen?.map(producto=>(
-          <FactAPOD
-         // id={producto.id}
-         
-          />
-        ))} */}
-
-
-          {/*<FactAPOD
-         // id={producto.id}
-         imagen={this.props.imagen}
-          
-      />*/}
+    {/*console.log(this.props.searchAPOD)*/}
+  <img src={img} alt="" />
     </div>
     )
     
