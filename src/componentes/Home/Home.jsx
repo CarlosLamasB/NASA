@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { searchAPOD } from '../../redux/actions';
-import img from '../../img/NASA2.jpg'
+import img from '../../img/NASA4.png'
 //import FactAPOD from '../FactAPOD/FactAPOD.jsx';
 
 
