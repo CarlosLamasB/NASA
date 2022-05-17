@@ -2,6 +2,8 @@ import React from "react";
 import { useDispatch,useSelector } from "react-redux";
 import { getManifest,getMarsPhoto} from "../../redux/actions";
 import MartianPhoto from "./MartianPhoto.jsx"
+import img4 from '../../img/rover-curiosity-de-la-nasa.jpg';
+import './CMPhoto.css'
 
 const CreateMartianPhotos = () => {
 //Hay que usar el useState y el SetsTATE
@@ -12,13 +14,12 @@ const CreateMartianPhotos = () => {
 const [rover, setRover]= React.useState('');
 const[sol, setSol]= React.useState(0);
 const dispatch = useDispatch();
-const rovercitu = useSelector(state => state.roverManifest);
+//const rovercitu = useSelector(state => state.roverManifest);//lo usraremos en la version 2.0 
 const fotos = useSelector(state => state.marsPhoto)
 function Roverizar(e){
 ///Debo aqui definir en funcion del evento y setRover, 
 //al rover para el query
 setRover(rover => e.target.name )
-console.log(rover);
 //Luego,debo aplicar el dispatch con getManifest
 
 };
@@ -52,8 +53,8 @@ primerasDiez=galeria.slice(0,9);
 }
 
 return (
-<div>
-  
+<div className="rover">
+  <img src={img4} alt="" className="img4" />
 <form onSubmit={(e) => handleSubmit(e)}>
 <button name="Opportunity" onClick={(e)=>Roverizar(e)}>Opportunity</button>
 <button name=" Spirit"  onClick={(e)=>Roverizar(e)}>Spirit</button>
