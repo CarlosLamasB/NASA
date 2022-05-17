@@ -1,0 +1,32 @@
+.casita{
+    
+    /*background-image:url('../../img/fotografia.jpg') ;
+background-repeat: no-repeat;
+background-size: 50%;
+background-origin: content-box;
+
+/*image-rendering: inherit;*/
+/*padding: 30%;/*prestar atencion al padding  al height*/
+display: flex;
+flex-direction: column;
+position: absolute;
+height: 80%;
+/*background-color:rgb(53, 184, 184);*/
+width: 100%;
+top:20%;
+margin: 0px;
+border: 0px;
+
+}
+
+.img{
+    display: flex;
+position:absolute;
+top:0%;
+left: 0%;
+height: 100%;
+
+width: 100%;
+/*transform: scaleX(1.2);*/
+z-index: -1;
+}

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { searchAPOD } from '../../redux/actions';
-import img from '../../img/NASA4.png'
-//import FactAPOD from '../FactAPOD/FactAPOD.jsx';
-
+//import img from '../../img/NASA4.png'
+import img2 from '../../img/fotografia.jpg';
+import './Home.css'
 
 export class Home extends Component {
 
@@ -18,9 +18,10 @@ this.props.searchAPOD()
   
   render() {
     return (
-      <div>  <h2>HOLIS</h2>
-    {/*console.log(this.props.searchAPOD)*/}
-  <img src={img} alt="" />
+      <div className='casita'>
+      <img src={img2} alt="" className="img" />
+
+   <h2>HOLIS</h2>
     </div>
     )
     

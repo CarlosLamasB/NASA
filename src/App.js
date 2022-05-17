@@ -15,17 +15,14 @@ import Favorites from "./componentes/Favorites/Favortes.jsx";
 
 function App() {
     return (
-        <div>
+        <div style={{position:"absolute", height:'100%', width:'100%'}}>
            <NavBar />
         
 
         <Route  path='/apod' component={FactAPOD} />
-
-
-            <Route path="/" exact component={Home} />
-
-              <Route path ="/CreateMartianPhotos" component={CreateMartianPhotos}/>
-              <Route path='/favorites'component={Favorites}/>   
+        <Route path="/" exact component={Home} />
+       <Route path ="/CreateMartianPhotos" component={CreateMartianPhotos}/>
+       <Route path='/favorites'component={Favorites}/>   
            {/*<Route exact path='/'>
                <Home/>
     </Route>*/}
