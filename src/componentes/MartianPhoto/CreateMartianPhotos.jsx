@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch,useSelector } from "react-redux";
-import { getManifest,getMarsPhoto} from "../../redux/actions";
+import { getManifest,getMarsPhoto,clearAll} from "../../redux/actions";
 import MartianPhoto from "./MartianPhoto.jsx"
 import img4 from '../../img/rover-curiosity-de-la-nasa.jpg';
 import './CMPhoto.css'
@@ -47,13 +47,13 @@ function handleChange(e) {
 let galeria = fotos.photos
 let primerasDiez;
 if(galeria){
-primerasDiez=galeria.slice(0,9);
+primerasDiez=galeria.slice(0,10);
 
 
 }
 
 return (
-<div className="rover">
+<div className={primerasDiez?"rover2":"rover"}>
   <img src={img4} alt="" className="img4" />
 <form onSubmit={(e) => handleSubmit(e)}>
 <button name="Opportunity" onClick={(e)=>Roverizar(e)}>Opportunity</button>
@@ -64,8 +64,9 @@ return (
 <input type="number" onChange={(e) => handleChange(e)}></input>
     
 <button type='submit'>Get Mars Photo</button>
+<button onClick={(e)=>{ e.preventDefault();dispatch(clearAll())}}> Clear All</button>
       </form>
-
+<div className="Mphotos">
       {
       primerasDiez?.map(producto=>(
         
@@ -82,7 +83,7 @@ return (
         
         
       }
-
+</div>
 
 </div>
 

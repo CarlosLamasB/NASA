@@ -8,8 +8,8 @@ export default class Nav extends Component {
         return (
             <div className='Nabu'>
            <ul className='codonosor'>
-             <img src={N} alt="" className='img3'/>
-     {/* <li className='second'>
+            <img src={N} alt="" className='img3'/>
+    {/*   <li className='second'>
         <NavLink to='/'>Home</NavLink>
       </li>
       <li className='second'>

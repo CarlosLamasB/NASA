@@ -1,4 +1,4 @@
-import { ADD_FAV_FACT,CLEAR_STATE,REMOVE_FAV_FACT,SEARCH_APOD,GET_MARS_PHOTO,GET_MANIFEST_ROVER} from "./actionTYPES";
+import { ADD_FAV_FACT,CLEAR_STATE,REMOVE_FAV_FACT,SEARCH_APOD,GET_MARS_PHOTO,GET_MANIFEST_ROVER,CLEAR_ALL} from "./actionTYPES";
 import axios from "axios";
 let API_KEY='IwQMnvW3SAfLZZbBpqpziqdhfbkV5Sokf7bXpitz';
 
@@ -47,3 +47,9 @@ export function addFavFACT(payload){
         .then(res => dispatch({type: GET_MARS_PHOTO, payload: res.data }))
     } catch(err){console.log(err)}}
   }// Try-catch.... urgenteee
+
+  export function clearAll(){
+    return {
+      type: CLEAR_ALL
+    }
+  }

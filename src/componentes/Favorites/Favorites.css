@@ -1,0 +1,63 @@
+.div-all{
+    top:20%;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color:aliceblue;
+    background-color:hsl(0, 0%, 0%);
+    padding:0px;
+    }
+    .Favphotos{
+        position: relative;
+        top:7%;
+        
+            height: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap:wrap;
+        gap: 5% 5%;
+        background-image: none;
+        background-color: transparent;
+        
+        padding: 0%;
+        }
+        .casita3{
+            position: relative;
+            width: 30%;
+            height: 32%;
+            /*left:5%;*/
+            display: flex;
+            flex-direction: column;
+            padding-right:0px;
+            padding-left: 0px;
+            align-items: baseline;
+            }
+
+            .img-dog2{
+                position: absolute;
+             height: 70%;
+             width: 80%;
+             border-radius: 10px;
+            bottom: 50% ;
+            left: 15%;
+            
+            }
+            .button-photo2{
+             position: absolute;
+             width:40%;
+             height: 20%;
+             top: 100%;
+             left: 15%;
+            }
+            .h2-button{
+                position: absolute;
+                 top:50%;
+                 /*height: 20%;
+                 width: 50%;*/
+                 left:15%;
+                 background-color: black;
+        
+            }

@@ -7,3 +7,4 @@ export const GET_CNEOS = 'GET_CNEOS';
 export const GET_TECHPORT ='GET_TECHPORT';
 export const GET_EXOPLANET ='GET_EXOPLANET';
 export const CLEAR_STATE = 'CLEAR_STATE';
+export const CLEAR_ALL =''

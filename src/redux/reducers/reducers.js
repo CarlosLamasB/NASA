@@ -1,4 +1,4 @@
-import { ADD_FAV_FACT,CLEAR_STATE,REMOVE_FAV_FACT,SEARCH_APOD,GET_MANIFEST_ROVER,GET_MARS_PHOTO } from "../actions/actionTYPES";
+import { ADD_FAV_FACT,CLEAR_STATE,REMOVE_FAV_FACT,SEARCH_APOD,GET_MANIFEST_ROVER,GET_MARS_PHOTO,CLEAR_ALL} from "../actions/actionTYPES";
 
 
 const initialState = {
@@ -41,7 +41,11 @@ case REMOVE_FAV_FACT:
      ...state,
      roverManifest: action.payload,
    };
-
+case CLEAR_ALL:
+  return{
+    ...state,
+  marsPhoto: {},
+  }
 
 
     default: return state;

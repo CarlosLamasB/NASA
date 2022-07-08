@@ -1,8 +1,4 @@
-//import logo from './logo.svg';
-//import './App.css';
 import React from "react";
-
-//import Favorites from "./components/Favorites/Favorites.jsx";//
 import Home from "./componentes/Home/Home.jsx";//
 import NavBar from "./componentes/NavBar/NavBar.jsx";//
 import { Route} from "react-router-dom";
@@ -15,7 +11,7 @@ import Favorites from "./componentes/Favorites/Favortes.jsx";
 
 function App() {
     return (
-        <div style={{position:"absolute", height:'100%', width:'100%'}}>
+        <div style={{position:'absolute', height:'100%', width:'100%'}}>
            <NavBar />
         
 
