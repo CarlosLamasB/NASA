@@ -57,7 +57,7 @@ return (
   <img src={img4} alt="" className="img4" />
 <form onSubmit={(e) => handleSubmit(e)}>
 <button name="Opportunity" onClick={(e)=>Roverizar(e)}>Opportunity</button>
-<button name=" Spirit"  onClick={(e)=>Roverizar(e)}>Spirit</button>
+<button name="Spirit"  onClick={(e)=>Roverizar(e)}>Spirit</button>
 <button name="Curiosity" onClick={(e)=>Roverizar(e)}> Curiosity</button>
 
 <label>Sol: </label>

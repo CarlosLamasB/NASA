@@ -22,8 +22,8 @@ this.props.searchAPOD()
       <img src={img2} alt="" className="img" />
 
    <h2>HOLIS</h2>
-   <p className='p-casita'> Esta App es para usar la informacion de api-nasa. 
-      De momento, nos trae la Foto Astronomica del Dia (APOD).
+   <p className='p-casita'> Esta App es para usar la informacion de las APIs de api.nasa.gov. 
+     En esta version, nos trae la Foto Astronomica del Dia (APOD).
       Tambien nos permite traer las primeras 10 fotos de los Rover Opportunity (F),
       Spirit(F)(?) y Curiosity. 
       Finalmente, podemos guardar las fotos queridas en la seccion de Favoritos
